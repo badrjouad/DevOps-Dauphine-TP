@@ -21,11 +21,6 @@ resource "google_artifact_registry_repository" "my-repo" {
   depends_on = [ google_project_service.artifact ]
 }
 
-
-
-
-
-
 resource "google_sql_user" "wordpress" {
    name     = "wordpress"
    instance = "main-instance"
